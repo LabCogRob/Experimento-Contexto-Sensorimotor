@@ -32,7 +32,7 @@ conc: "5.853"
 
 {
 sentence: "La constructora contrató a un nuevo",
-word: "hambre",
+word: "hambriento",
 type: "A",
 sim: "0.4",
 fam: "4.724",
@@ -52,7 +52,7 @@ conc: "4.933"
 
 {
 sentence: "En la tienda departamental, vi una",
-word: "Hierba",
+word: "Concha",
 type: "A",
 sim: "0.63",
 fam: "5.681",
@@ -62,7 +62,7 @@ conc: "6.400"
 
 {
 sentence: "Como salió muy apurada, olvidó llevar su",
-word: "miel",
+word: "Turismo",
 type: "A",
 sim: "0.57",
 fam: "6.416",
@@ -72,7 +72,7 @@ conc: "4.724"
 
 {
 sentence: "En el cajón de la bodega, encontré una",
-word: "riendo",
+word: "Manejando",
 type: "A",
 sim: "0.76",
 fam: "6.533",
@@ -82,17 +82,17 @@ conc: "4.581"
 
 {
 sentence: "El médico le aconsejó mudarse al",
-word: "ruidosa",
+word: "Escuchar",
 type: "A",
 sim: "0.45",
 fam: "6.334",
 imag: "5.963",
 conc: "4.773"
 },
-
+  
 {
 sentence: "El técnico ajustó las luces del",
-word: "república",
+word: "Respirar",
 type: "A",
 sim: "0.62",
 fam: "5.480",
