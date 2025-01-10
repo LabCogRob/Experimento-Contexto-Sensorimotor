@@ -403,7 +403,7 @@ var estrategia = {
 // Agradecimiento
 var agradecimiento = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: '<p><strong>¡Muchas gracias por tu participación!</strong></p><p>La tarea ha terminado, sólo falta guardar los datos de tus respuestas.</p><p><strong>Por favor, presiona el botón GUARDAR DATOS y espera hasta que deje de dar vueltas el círculo para que se guarden todos los datos.</strong></p> <p>En cuanto esto ocurra ya puedes cerrar la página. Gracias. :)</p>',
+    stimulus: '<p><strong>¡Muchas gracias por tu participación!</strong></p><p><strong>Por favor, presiona el botón GUARDAR DATOS, se desactivará el modo pantalla completa y podrás cerrar la pagina del experimento.</strong></p> ',
     choices: ["GUARDAR DATOS"]
 };
 
@@ -413,6 +413,7 @@ var pantalla_salir = {
     fullscreen_mode: false,
     delay_after: 0
 };
+
 
 // Save data
 //guardar datos
@@ -427,7 +428,8 @@ const save_data = {
 
 // With the selected condition then the corresponding instructions and trial are selected
 
-var timeline= [preload,pantalla_completa,consentimiento_informado,genero,edad,nacionalidad,lengua_m,area].concat(instructions).concat(inicio_experimento).concat(trials).concat(final).concat(dificultad).concat(estrategia).concat(agradecimiento).concat(save_data).concat(pantalla_salir);
+
+var timeline= [preload,pantalla_completa,consentimiento_informado,genero,edad,nacionalidad,lengua_m,area].concat(instructions).concat(inicio_experimento).concat(trials).concat(final).concat(dificultad).concat(estrategia).concat(save_data).concat(agradecimiento).concat(pantalla_salir);
      
 
 
