@@ -399,13 +399,6 @@ var estrategia = {
   ],
 };
 
-// Agradecimiento
-
-  /*  var agradecimiento = {
-        type: jsPsychHtmlButtonResponse,
-        stimulus: '<p><strong>¡Muchas gracias por tu participación!</strong></p><p>La tarea ha terminado, sólo falta guardar los datos de tus respuestas.</p><p><strong>Por favor, presiona el botón GUARDAR DATOS y espera hasta que deje de dar vueltas el círculo para que se guarden todos los datos.</strong></p> <p>En cuanto esto ocurra ya puedes cerrar la página. Gracias. :)</p>',
-        choices: ["GUARDAR DATOS"]
-    };*/
 // Guardar datos
 const save_data = {
     type: jsPsychPipe,
@@ -414,8 +407,16 @@ const save_data = {
     filename: `${rand_subject_id}.csv`,
     data_string: () => jsPsych.data.get().csv(),
     on_finish: function(data) {
-        jsPsych.endExperiment('<p><strong>¡Muchas gracias por tu participación!</strong></p><p>La tarea ha terminado, sólo falta guardar los datos de tus respuestas.</p><p><strong>Por favor, presiona el botón GUARDAR DATOS y espera hasta que deje de dar vueltas el círculo para que se guarden todos los datos.</strong></p> <p>En cuanto esto ocurra ya puedes cerrar la página. Gracias. :)</p>');
+        document.getElementById('guardar-datos').style.display = 'block';
     }
+};
+
+// Agradecimiento
+var agradecimiento = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: '<p><strong>¡Muchas gracias por tu participación!</strong></p><p>La tarea ha terminado, sólo falta guardar los datos de tus respuestas.</p><p><strong>Por favor, presiona el botón GUARDAR DATOS y espera hasta que deje de dar vueltas el círculo para que se guarden todos los datos.</strong></p> <p>En cuanto esto ocurra ya puedes cerrar la página. Gracias. :)</p>',
+    choices: ["GUARDAR DATOS"],
+    button_html: '<button class="jspsych-btn" id="guardar-datos" style="display:none;">%choice%</button>'
 };
 
 // Salir pantalla completa 
